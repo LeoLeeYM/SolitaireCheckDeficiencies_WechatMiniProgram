@@ -1,0 +1,20 @@
+<text class="CreatNameList_Title">一键查缺</text>
+
+<textarea bindinput="Input_NameList" class="CreatNameList_ListInput" maxlength="-1" placeholder="请输入接龙内容" style="padding: 40rpx; margin-top: 7%; height: 477rpx; border-radius: 20px; width: 650rpx; display: block; box-sizing: border-box; left: 0rpx; top: 0rpx"/>
+
+<picker class="NameListPicker" bindchange="PickerChange_NameListSelect" data-array="{{userNameList}}" value="{{userNameListSelectIndex}}" range="{{userNameList}}" range-key="tag">
+    <view class="pickerTip" style="position: absolute; left: 31rpx; top: 16rpx">
+      选择名单
+    </view>
+    <text class="pickerName" style="width: 302rpx; height: 45rpx; display: block; box-sizing: border-box; left: 186rpx; top: 18rpx; position: absolute">{{userNameList[userNameListSelectIndex].tag}}
+    </text>
+
+    <image class="PickerSelectIcon" src="../../img/RSelectTip.png"></image>
+</picker>
+
+<button class="CreatNameList_Button" hover-class="CreatNameList_ButtonDown" bindtap="ButtonClick_CheckNameList" style="left: 57rpx; top: 779rpx; width: 637rpx; height: 79rpx; display: block; box-sizing: border-box">一键查缺</button>
+
+<text style="position: absolute; left: 85rpx; top: 1012rpx; width: 579rpx; height: 445rpx; display: block; box-sizing: border-box;" selectable="true">{{endNameList}}</text>
+
+<switch class="MultilineSwitch" bindchange="SwitchChange_Multiline" wx:if="{{endNameList != endNameListTemp}}">使用多行展示</switch>
+<button class="CreatNameList_Button" bindtap="ButtonClick_CopyNameList"  wx:if="{{endNameList != endNameListTemp}}" style="background-color: rgb(240, 240, 240); color: black; position: absolute; left: 458rpx; top: 892rpx; width: 229rpx; height: 79rpx; display: block; box-sizing: border-box">一键复制</button>

@@ -1,0 +1,32 @@
+<view class="Card" bindtap="CardClick_Check">
+  <image class="CardImg" style="background-color: #5a91f7;"></image>
+  <image class="CardIcon" src="../../img/Checking.png"></image>
+  <text class="CardTitle">一键查缺</text>
+</view>
+
+<view class="Card" bindtap="CardClick_NameList">
+  <image class="CardImg" style="background-color: #32abd1;"></image>
+  <image class="CardIcon" src="../../img/Library.png"></image>
+  <text class="CardTitle">我的名单</text>
+</view>
+
+<view class="Card" wx:if="{{false}}">
+  <image class="CardImg" style="background-color: #b1cce1;"></image>
+  <image class="CardIcon" src="../../img/User.png"></image>
+  <text class="CardTitle">个人中心</text>
+</view>
+
+<view class="Card" bindtap="CardClick_Help">
+  <image class="CardImg" style="background-color: #c8bfe7;"></image>
+  <image class="CardIcon" src="../../img/Help.png" style="width: 120rpx; height: 120rpx; position: absolute; left: 468rpx; top: 66rpx"></image>
+  <text class="CardTitle">使用教程</text>
+</view>
+
+<view class="Info" style="margin: 100rpx; width: 550rpx; height: 116rpx; display: block; position: relative">
+  <text selectable="true" style="word-wrap: break-word;word-break: break-all;white-space: pre-line;line-height: 1.5rem; font-weight: bold; font-size: 0.8rem; position: absolute; top: -79rpx; left: -24rpx; width: 600rpx; height: 277rpx; display: block; box-sizing: border-box">
+  开发者：LeoLeeYM
+  联系开发者：1059872990@qq.com
+  
+  这个小程序可以非常快捷的将微信群接龙中没有参与接龙的成员筛选出来，不会用的话可以点击最后一个选项获取教程哦，如果还是不明白或者有好的建议可以直接发邮件给我。
+  </text>
+</view>

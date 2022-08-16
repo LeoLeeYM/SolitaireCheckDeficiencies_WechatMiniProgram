@@ -1,0 +1,47 @@
+page{
+    background-color: rgb(240, 240, 240);
+}
+
+/** 卡片前端实现 **/
+.Card{ /** 整体卡片 **/
+    margin: 25px;
+    position: relative;
+}
+
+.CardImg { /** 卡片底图 **/
+    width: 100%;
+    border-radius: 10px;
+    background-color: rgb(240, 240, 240);
+    box-shadow: -7px -7px 20px 0px #fff9,
+                -4px -4px 5px 0px #fff9,
+                7px 7px 20px 0px #0002,
+                4px 4px 5px 0px #0001;
+    height: 250rpx; 
+    width:100%; 
+    display: inline-block; 
+    box-sizing: border-box
+}
+
+.CardIcon { /** 卡片图标 **/
+    position: absolute;
+    right: 40rpx;
+    top: 40rpx;
+
+    width: 170rpx;
+    height: 170rpx;
+
+    display: inline-block; 
+    box-sizing: border-box
+}
+
+.CardTitle{
+    position: absolute;
+    left: 70rpx;
+    top: 80rpx;
+
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ffffff;
+
+}
+

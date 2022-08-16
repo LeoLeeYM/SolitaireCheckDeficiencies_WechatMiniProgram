@@ -1,0 +1,41 @@
+
+<button class="Button" hover-class="ButtonDown" bindtap="ButtonClick_NewNameList" style="left: 30rpx; top: 30rpx;">新建名单</button>
+
+
+<view style="margin-top: 50rpx;">
+    <block wx:for="{{userNameList}}" wx:for-item="item1" wx:key="index">
+        
+        
+        <view class="ShowUserNameListInfoCard_ViewCard">
+            <text class="ShowUserNameListInfoCard_CardTitle">{{item1.tag}}</text>   
+            <text class="ShowUserNameListInfoCard_CardText" >{{item1.string}}</text>
+            <view class="ShowUserNameListInfoCard_Delete" hover-class="ShowUserNameListInfoCard_DeleteDown" data-tag="{{item1.tag}}" bindtap="ButtonClick_DelNameListCard">
+                <image style="height: 100%;width: 100%;" src="../../img/delete.png"></image>
+            </view>
+        </view>
+        
+    </block>
+</view>
+
+
+<!--创建名单弹窗模块-->
+<view class="CreatNameList_View" wx:if="{{showNewNameListWindow}}">
+    <View class="CreatNameList_Mask">
+        <view class="CreatNameList_Window" style="position: absolute; left: 72rpx; top: 202rpx">
+
+            <text class="CreatNameList_Title">创建新名单</text>
+
+            <input bindinput="Input_NameListTag" class="CreatNameList_ListInput" maxlength="12" placeholder="请输入名单标签"/>
+            <textarea bindinput="Input_NameList" class="CreatNameList_ListInput" maxlength="-1" placeholder="请输入名单内容" style="margin-top: 3%; height: 39%;border-radius: 20px; padding:40rpx; width: 73%"/>
+
+            <radio-group class="CreatNameList_Radio" bindchange="RadioChange_CreatModeSelect">
+                <radio value="jielong" checked="true"/>完整接龙名单
+                <radio value="diy"/>自定义
+            </radio-group>
+            
+            <button class="CreatNameList_Button" hover-class="CreatNameList_ButtonDown" bindtap="ButtonClick_CancelCreatNameList" style="font-weight: bold; width: 225rpx; height: 77rpx; display: block; box-sizing: border-box; left: 42rpx; top: 781rpx; position: absolute">取消</button>
+            <button class="CreatNameList_Button" hover-class="CreatNameList_ButtonDown" bindtap="ButtonClick_CreatNameList" style="font-weight: bold; color: #ffffff; background-color: #5cdf9b; width: 225rpx; height: 77rpx; display: block; box-sizing: border-box; left: 321rpx; top: 781rpx; position: absolute">添加</button>
+        </view>
+    </View>
+</view>
+<!--创建名单弹窗模块结束-->

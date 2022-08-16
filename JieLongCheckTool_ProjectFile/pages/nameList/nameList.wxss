@@ -1,0 +1,199 @@
+page{
+    background-color: rgb(240, 240, 240);
+}
+
+.Button { /** 标准按钮 **/
+    border-radius: 100px;
+    background-color: rgb(240, 240, 240);
+    box-shadow: -7px -7px 20px 0px #fff9,
+                -4px -4px 5px 0px #fff9,
+                7px 7px 20px 0px #0002,
+                4px 4px 5px 0px #0001;
+
+    display: inline-block; 
+    box-sizing: border-box;
+}
+
+.ButtonDown { /** 按钮按下 **/
+    border-radius: 100px;
+    background-color: rgb(240, 240, 240);
+    box-shadow: -7px -7px 20px 0px #fff9,
+                -4px -4px 5px 0px #fff9,
+                7px 7px 20px 0px #0002,
+                4px 4px 5px 0px #0001,
+                inset -7px -7px 20px 0px #fff9,
+                inset -4px -4px 5px 0px #fff9,
+                inset 7px 7px 20px 0px #0003,
+                inset 4px 4px 5px 0px #0001;
+
+    display: inline-block; 
+    box-sizing: border-box;
+
+    left: 30rpx;
+    top: 30rpx;
+}
+
+
+/**创建名单模块**/
+.CreatNameList_View{
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+.CreatNameList_Mask{
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+.CreatNameList_Window{
+    border-radius: 20px;
+    background-color: rgb(240, 240, 240);
+
+    position:absolute;
+    width: 600rpx;
+    height: 900rpx;
+
+}
+.CreatNameList_Button { /** 按钮 **/
+    position: absolute;
+    border-radius: 50px;
+    background-color: rgb(240, 240, 240);
+    box-shadow: -7px -7px 20px 0px #fff9,
+                -4px -4px 5px 0px #fff9,
+                7px 7px 20px 0px #0002,
+                4px 4px 5px 0px #0001;
+
+    display: inline-block; 
+    box-sizing: border-box;
+    font-weight:normal;
+}
+.CreatNameList_ButtonDown { /** 按钮 **/
+    position: absolute;
+    border-radius: 50px;
+    background-color: rgb(240, 240, 240);
+    box-shadow: -7px -7px 20px 0px #fff9,
+                -4px -4px 5px 0px #fff9,
+                7px 7px 20px 0px #0002,
+                4px 4px 5px 0px #0001,
+                inset -7px -7px 20px 0px #fff9,
+                inset -4px -4px 5px 0px #fff9,
+                inset 7px 7px 20px 0px #0003,
+                inset 4px 4px 5px 0px #0001;
+
+    display: inline-block; 
+    box-sizing: border-box;
+    font-weight:normal;
+}
+
+.CreatNameList_Title{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 45rpx;
+
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.CreatNameList_ListInput{
+    border-radius: 50px;
+    background-color: rgb(240, 240, 240);
+    box-shadow: 0px 0px 0px 0px #fff9,
+              0px 0px 0px 0px #fff9,
+              0px 0px 0px 0px #0001,
+              0px 0px 0px 0px #0001,
+              inset -3.5px -3.5px 20px 0px #fff9,
+              inset -2px -2px 5px 0px #fff9,
+              inset 3.5px 3.5px 20px 0px #0003,
+              inset 2px 2px 5px 0px #0001;
+
+    width: 80%;
+    height: 80rpx;
+    margin-left: 7%;
+    margin-top: 8%;
+    padding-left: 40rpx;
+}
+
+.CreatNameList_Radio{
+    margin-left: 7%;
+    margin-top: 4%;
+    
+}
+/**创建名单模块结束**/
+
+/**名单展示模块**/
+.ShowUserNameListInfoCard_ViewCard { /** 卡片底图 **/
+    position: relative;
+    border-radius: 10px;
+    background-color: rgb(240, 240, 240);
+    box-shadow: -7px -7px 20px 0px #fff9,
+                -4px -4px 5px 0px #fff9,
+                7px 7px 20px 0px #0002,
+                4px 4px 5px 0px #0001;
+    height: 400rpx; 
+    width: 690rpx;
+    display: inline-block; 
+    box-sizing: border-box;
+
+    margin: 30rpx;
+    margin-top:15rpx;
+}
+
+.ShowUserNameListInfoCard_CardTitle{
+    position: absolute;
+    font-size: 1.35rem;
+    font-weight: bold;
+    left: 50rpx;
+    top: 50rpx;
+}
+.ShowUserNameListInfoCard_CardText{
+    position: absolute;
+    left: 50rpx;
+    top: 150rpx;
+
+    width: 85%;
+
+    display: -webkit-box;
+    word-break: break-all;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.ShowUserNameListInfoCard_Delete{
+    position: absolute;
+    width: 70rpx;
+    height: 70rpx;
+
+    right: 30rpx;
+    top: 30rpx;
+
+    border-radius: 100%;
+    box-shadow: -7px -7px 20px 0px #fff9,
+                -4px -4px 5px 0px #fff9,
+                7px 7px 20px 0px #0002,
+                4px 4px 5px 0px #0001;
+}
+.ShowUserNameListInfoCard_DeleteDown{
+    position: absolute;
+    width: 70rpx;
+    height: 70rpx;
+
+    right: 30rpx;
+    top: 30rpx;
+
+    border-radius: 100%;
+    box-shadow: 0px 0px 0px 0px #fff9,
+              0px 0px 0px 0px #fff9,
+              0px 0px 0px 0px #0001,
+              0px 0px 0px 0px #0001,
+              inset -3.5px -3.5px 20px 0px #fff9,
+              inset -2px -2px 5px 0px #fff9,
+              inset 3.5px 3.5px 20px 0px #0003,
+              inset 2px 2px 5px 0px #0001;
+}
+/**名单展示结束**/

@@ -1,0 +1,13 @@
+page{
+    background-color: rgb(240, 240, 240);
+}
+
+.Title{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 45rpx;
+
+    font-size: 1.5rem;
+    font-weight: bold;
+}

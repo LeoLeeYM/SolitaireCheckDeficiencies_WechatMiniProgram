@@ -1,0 +1,43 @@
+<text class="Title">使用说明</text>
+
+<view class="Info" style="margin: 100rpx; width: 550rpx; height: 116rpx; display: block; position: relative">
+  <text selectable="true" style="word-wrap: break-word;word-break: break-all;white-space: pre-line;line-height: 1.5rem; font-weight: bold; font-size: 0.8rem; position: absolute; top: -79rpx; left: -24rpx; width: 600rpx; height: 277rpx; display: block; box-sizing: border-box">
+  接龙查缺是一个用于微信群接龙快速查找缺少人员的小程序，微信接龙一直以来都不支持统计功能，导致接龙后查缺非常不方便，所以开发了这款小程序来解决这个问题。
+
+  这个小程序使用非常简单，首次使用需要先设置一个用作查缺依据的名单，设置完后就不需要再设置了，查缺时会对比所提供的接龙和名单，然后统计出缺少的人员名单。
+
+  首次使用我们先来创建名单，首先在首页点击如图所示的“我的名单”卡片。
+  </text>
+</view>
+
+<image src="../../img/Help/helpimg_1.jpg" style="position: absolute; left: 78rpx; top: 760rpx; width: 595rpx; height: 439rpx; display: block; box-sizing: border-box"></image>
+
+<view class="Info" style="margin: 100rpx; width: 550rpx; height: 116rpx; display: block; position: absolute">
+  <text selectable="true" style="word-wrap: break-word; word-break: break-all; white-space: pre-line; line-height: 1.5rem; font-weight: bold; font-size: 0.8rem; position: absolute; top: 674rpx; left: -27rpx; width: 600rpx; height: 277rpx; display: block; box-sizing: border-box">
+  然后，在进入的新页面里点击页面左上角的“新建名单”按钮。
+  </text>
+</view>
+
+<image src="../../img/Help/helpimg_2.jpg" style="position: absolute; left: 125rpx; top: 1358rpx; width: 500rpx; height: 410rpx; display: block; box-sizing: border-box"></image>
+
+<view class="Info" style="margin: 100rpx; width: 550rpx; height: 116rpx; display: block; position: absolute">
+  <text selectable="true" style="word-wrap: break-word; word-break: break-all; white-space: pre-line; line-height: 1.5rem; font-weight: bold; font-size: 0.8rem; position: absolute; top: 1052rpx; left: -33rpx; width: 600rpx; height: 277rpx; display: block; box-sizing: border-box">
+  点击后就会弹出新建名单的页面了。
+
+  在这个页面我们先要设置这个名单的标签，让我们可以区别不同的名单，名单标签每个名单是不能重复的，重复设置会覆盖之前的名单。
+
+  然后就是名单的内容了，这个内容取决于下面两个选项：“完整接龙名单”还是“自定义”
+
+  如果选择“完整接龙名单”，那么我们就在“名单内容”中填写一次所有人都参与了的接龙；如果是“自定义”，那么就填写所有人的名字，用逗号“，”或者分号“；”隔开，全角半角均可。
+
+  填写完成后点击添加即可，我们就可以在这个页面看到添加完成的名单啦。
+  </text>
+</view>
+
+<image src="../../img/Help/helpimg_3.jpg" style="position: absolute; left: 100rpx; top: 2391rpx; width: 500rpx; height: 677rpx; display: block; box-sizing: border-box"></image>
+
+<view class="Info" style="margin: 100rpx; width: 550rpx; height: 116rpx; display: block; position: absolute">
+  <text selectable="true" style="word-wrap: break-word; word-break: break-all; white-space: pre-line; line-height: 1.5rem; font-weight: bold; font-size: 0.8rem; position: absolute; top: 2547rpx; left: -50rpx; width: 600rpx; height: 277rpx; display: block; box-sizing: border-box">
+  随后，我们返回到主页面，点击“一键查缺”卡片，在进入的页面填写我们要查缺的接龙，选择对应的名单，一键查缺即可！新建名单的操作只需要进行一次，后续直接一键查缺就可以了！
+  </text>
+</view>

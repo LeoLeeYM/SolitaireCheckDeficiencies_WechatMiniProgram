@@ -1,0 +1,109 @@
+.CreatNameList_Button { /** 按钮 **/
+    position: absolute;
+    border-radius: 50px;
+    box-shadow: -7px -7px 20px 0px #fff9,
+                -4px -4px 5px 0px #fff9,
+                7px 7px 20px 0px #0002,
+                4px 4px 5px 0px #0001;
+
+    display: inline-block; 
+    box-sizing: border-box;
+    font-weight:normal;
+
+    font-weight: bold; 
+    color: #ffffff; 
+    background-color: #5cdf9b; 
+    width: 305rpx; 
+    height: 77rpx; 
+    display: block; 
+    box-sizing: border-box; 
+    left: 217rpx; 
+    top: 799rpx;
+}
+.CreatNameList_ButtonDown { /** 按钮 **/
+    border-radius: 50px;
+    box-shadow: -7px -7px 20px 0px #fff9,
+                -4px -4px 5px 0px #fff9,
+                7px 7px 20px 0px #0002,
+                4px 4px 5px 0px #0001,
+                inset -7px -7px 20px 0px #fff9,
+                inset -4px -4px 5px 0px #fff9,
+                inset 7px 7px 20px 0px #0003,
+                inset 4px 4px 5px 0px #0001;
+
+    display: inline-block; 
+    box-sizing: border-box;
+    font-weight:normal;
+}
+
+.CreatNameList_Title{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 45rpx;
+
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.CreatNameList_ListInput{
+    border-radius: 50px;
+    background-color: rgb(240, 240, 240);
+    box-shadow: 0px 0px 0px 0px #fff9,
+              0px 0px 0px 0px #fff9,
+              0px 0px 0px 0px #0001,
+              0px 0px 0px 0px #0001,
+              inset -3.5px -3.5px 20px 0px #fff9,
+              inset -2px -2px 5px 0px #fff9,
+              inset 3.5px 3.5px 20px 0px #0003,
+              inset 2px 2px 5px 0px #0001;
+
+    width: 80%;
+    height: 80rpx;
+    margin-left: 7%;
+    margin-top: 8%;
+    padding-left: 40rpx;
+}
+
+.NameListPicker{
+    position: relative;
+    border-radius: 50px;
+    box-shadow: -7px -7px 20px 0px #fff9,
+                -4px -4px 5px 0px #fff9,
+                7px 7px 20px 0px #0002,
+                4px 4px 5px 0px #0001;
+
+    width: 85%;
+    height: 80rpx;
+    margin-left: 7.5%;
+    margin-top: 30rpx;
+}
+
+.pickerTip{
+    position: absolute;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.pickerName{
+    position: absolute;
+    font-size: 1.1rem;
+    margin-left: 14rpx;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.PickerSelectIcon{
+    position: absolute;
+    width: 60rpx;
+    height: 60rpx;
+    right: 10rpx;
+    top: 10rpx;
+}
+
+.MultilineSwitch{
+    position: absolute;
+    top: 900rpx;
+    left: 60rpx;
+}
